@@ -19,11 +19,48 @@ img {
   max-width: 100%;
 }
 
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-title {
+  color: var(--color-black);
+  font-family: "Roboto", sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
 .text {
   color: var(----color-black);
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
   font-weight: 400;
+  line-height: 21px;
+  margin: 0;
+}
+
+.strong-text {
+  color: var(--color-black);
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.title-middle {
+  color: var(--color-black);
+  font-family: "Roboto", sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  display: block;
+  line-height: 42px;
+  &--center {
+    @extend .title-middle;
+    text-align: center;
+  }
 }
 
 a {
@@ -33,6 +70,7 @@ a {
 ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 button {
@@ -89,7 +127,7 @@ a {
 .container {
   margin: 0 auto;
   padding: 0 15px;
-  max-width: 1210px;
+  max-width: 1200px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -120,6 +158,9 @@ a {
   font-size: 2.25rem;
   font-weight: 700;
   text-align: center;
+  margin: 0;
+  line-height: 4.2rem;
+  margin-bottom: 60px;
 }
 
 .section {
@@ -160,4 +201,20 @@ a {
   font-weight: 400;
   padding: 10px 21px;
   font-style: italic;
+}
+
+
+.video .container {
+  position: relative;
+  padding-bottom: 36.25%; /* 16:9 */
+  height: 0;
+  max-height: 500px;
+}
+
+.video  iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
