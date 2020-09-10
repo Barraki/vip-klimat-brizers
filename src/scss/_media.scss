@@ -1,0 +1,138 @@
+@media (max-width: 1220px) {
+  .shop__item:not(:nth-child(3n)) {
+    margin-right: 5px;
+  }
+
+  .shop__container {
+    justify-content: space-around;
+  }
+
+  .shop__item {
+    max-width: 320px;
+  }
+
+  html {
+    font-size: 13.2px;
+  }
+
+  .main-section .slide__container {
+    padding-top: 20vh;
+  }
+
+  .options__item {
+    flex: 1 0;
+  }
+
+  .title-middle,
+  .title-middle--center {
+    font-size: 26px;
+  }
+
+  .shop__price,
+  .shop__price--new,
+  .shop__price--old {
+    padding-left: 20px;
+  }
+  .shop__price--old {
+    top: -15px;
+    left: 12px;
+  }
+
+  .shop__item .hits--orange {
+    padding: 0 73px;
+  }
+
+  .shop__item .hits--red {
+    padding: 0 72px;
+  }
+  .call-to-action__right {
+    justify-content: center;
+  }
+
+  .about-us__item:not(:nth-child(3n)) {
+    margin-right: 0px;
+  }
+
+  .about-us__item:not(:nth-child(2n)) {
+    margin-right: 10px;
+  }
+
+  .about-us__item {
+    max-width: 49%;
+  }
+
+  .testimonials__image-block {
+    width: auto;
+    height: auto;
+    overflow: auto;
+    border-radius: 0;
+  }
+
+  .testimonials__image {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+  }
+  .montage__item {
+    max-width: 32.633333%;
+  }
+
+  .montage__item:nth-child(2) {
+    margin: 0 10px;
+  }
+
+  .montage__title {
+    margin-bottom: 0;
+    height: 66px;
+  }
+
+  .montage__block {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .places__item {
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  .places__item:nth-child(1),
+  .places__item:nth-child(4) {
+    width: 60%;
+  }
+
+  .places__item:nth-child(2),
+  .places__item:nth-child(3) {
+    width: 39%;
+  }
+
+  .places__item:nth-child(5),
+  .places__item:nth-child(6) {
+    width: 49%;
+  }
+
+  .articles__item {
+    max-width: 32.633333%;
+    min-height: auto;
+  }
+  
+  .articles__title {
+    height: 90px;
+  }
+  
+  .shop__title {
+    font-size: 20px;
+  }
+  
+  .shop__item {
+    min-height: auto;
+  }
+  
+  .shop__features {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-height: 1000px) {
+  .main-section .main-slider {
+    height: calc(68vh - 101px);
+}
+}

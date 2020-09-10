@@ -24,15 +24,17 @@
 
 <body>
 	<div class="site-container">
-		<header class="header">
+		<main>
+			<header class="header">
   <div class="container">
     <div class="header__logo logo">VIP-KLIMAT</div>
     <nav class="header__nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link">Бризеры</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Монтаж</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Статьи</a></li>
+        <li class="nav__item"><a class="nav__link">Главная</a></li>
+        <li class="nav__item"><a href="#shop" class="nav__link">Бризеры</a></li>
+        <li class="nav__item"><a href="#about-us" class="nav__link">О нас</a></li>
+        <li class="nav__item"><a href="#montage" class="nav__link">Монтаж</a></li>
+        <li class="nav__item"><a href="#articles" class="nav__link">Статьи</a></li>
       </ul>
     </nav>
     <div class="header__contact">
@@ -44,7 +46,7 @@
     </div>
   </div>
 </header>
-		<section class="main-section" id="main-section">
+			<section class="main-section" id="main-section">
   <h1 class="visually-hidden">Бризеры Tion -- Vip-klimat</h1>
   <div class="main-slider">
     <div class="slide">
@@ -53,8 +55,7 @@
         <h2 class="slide__title"><span class="logo">Tion </span><span class="slide__product">Бризеры в Москве</span></h2>
         <div class="slide__description">
           Суперкомпактные размеры +
-          очистка от пыли и аллергенов <br>
-          от производителя
+          очистка от пыли и аллергенов
         </div>
       </div>
     </div>
@@ -69,7 +70,7 @@
     </div>
   </div>
 </section>
-		<section class="section questions" id="questions">
+			<section class="section questions" id="questions">
   <h2 class="h2">Чувствуете постоянную усталость и слабость? </h2>
   <div class="container questions__container">
     <div class="questions__item">
@@ -119,7 +120,7 @@
     </div>
   </div>
 </section>
-		<section class="section install" id="install">
+			<section class="section install" id="install">
   <div class="container install__container">
     <div class="install__left">
       <h2 class="hero-title">УСТАНОВИТЕ <br> БРИЗЕР TION</h2>
@@ -198,16 +199,16 @@
     </div>
   </div>
 </section>
-		<section class="video" id="video" style="display: none;">
+			<section class="video" id="video" style="display: none;">
   <div class="container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/lHrnLTMMpgQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </section>
-		<section class="shop-section section" id="shop">
+			<section class="shop-section section" id="shop">
   <div class="container">
     <h2 class="h2">ВЫБЕРИТЕ СВОЙ БРИЗЕР Tion</h2>
     <div class="shop__container">
-      <div class="shop__item">
+      <div class="shop__item" id="tion-02">
         <div class="shop__title">Бризер <br> Tion O2</div>
         <div class="shop__image-block">
           <img src="img/products/tion-o2.png" alt="tion-o2" class="shop_image">
@@ -224,7 +225,7 @@
         </div>
         <div class="hits--black">Лучший Выбор</div>
       </div>
-      <div class="shop__item">
+      <div class="shop__item" id="tion-3s">
         <div class="shop__title">Бризер <br> Tion 3S</div>
         <div class="shop__image-block">
           <img src="img/products/tion-3s.png" alt="tion-3s" class="shop_image">
@@ -242,7 +243,7 @@
         </div>
         <div class="hits--red">Скидка</div>
       </div>
-      <div class="shop__item">
+      <div class="shop__item" id="tion-lite">
         <div class="shop__title">Бризер <br> Tion Lite</div>
         <div class="shop__image-block">
           <img src="img/products/tion-lite.png" alt="tion-lite" class="shop_image">
@@ -259,7 +260,7 @@
         </div>
         <div class="hits--orange">Топ Продаж</div>
       </div>
-      <div class="shop__item">
+      <div class="shop__item" id="tion-clever">
         <div class="shop__title">Бризер <br> Tion Clever</div>
         <div class="shop__image-block">
           <img src="img/products/tion-clever.png" alt="tion-clever" class="shop_image">
@@ -274,7 +275,7 @@
           <button class="btn btn-blue shop__button">Купить</button>
         </div>
       </div>
-      <div class="shop__item">
+      <div class="shop__item" id="tion-magic-air">
         <div class="shop__title">Управление <br> климатом Magic Air</div>
         <div class="shop__image-block">
           <img src="img/products/magic-air.png" alt="magic-air" class="shop_image">
@@ -288,9 +289,9 @@
           <div class="shop__price">6 900₽</div>
           <button class="btn btn-blue shop__button">Купить</button>
         </div>
-        
+
       </div>
-      <div class="shop__item">
+      <div class="shop__item" id="tion-filter">
         <div class="shop__title">
           Фильтры <br>
           бризеров Tion</div>
@@ -310,7 +311,7 @@
     </div>
   </div>
 </section>
-		<section class="section call-to-action__section" id="call-to-action">
+			<section class="section call-to-action__section" id="call-to-action">
   <div class="container">
     <div class="call-to-action__block">
       <div class="call-to-action__left">
@@ -326,7 +327,7 @@
     </div>
   </div>
 </section>
-		<section class="about-us__section section" id="about-us">
+			<section class="about-us__section section" id="about-us">
   <div class="container">
     <h2 class="h2">Почему нужно заказывать у нас</h2>
     <div class="about-us__block">
@@ -423,7 +424,7 @@
     <button class="btn btn-grey btn-section--center visually-hidden">Все отзывы</button>
   </section>
 </section>
-		<section class="section montage__section" id="montage">
+			<section class="section montage__section" id="montage">
   <h2 class="h2">Монтаж бризера Tion</h2>
   <div class="subtitle">Стандартный монтаж бризера занимает всего 1 час специалистами с профессиональным оборудованием
   </div>
@@ -462,7 +463,7 @@
     <button class="btn btn-blue btn-section--center visually-hidden">Подробнее</button>
   </div>
 </section>
-		<section class="section call-to-action__section" id="call-to-action">
+			<section class="section call-to-action__section" id="call-to-action">
   <div class="container">
     <div class="call-to-action__block">
       <div class="call-to-action__left">
@@ -478,7 +479,7 @@
     </div>
   </div>
 </section>
-		<section class="places__section section">
+			<section class="places__section section" id="places">
   <h2 class="h2">Где эффективно работают бризеры Tion</h2>
   <div class="container">
     <div class="places__block">
@@ -509,7 +510,7 @@
     </div>
   </div>
 </section>
-		<section class="articles__section section" id="articles">
+			<section class="articles__section section" id="articles">
   <h2 class="h2">Полезные статьи и видео</h2>
   <div class="container">
     <div class="articles__block">
@@ -556,7 +557,7 @@
     <button class="btn btn-blue btn-section--center visually-hidden">Еще статьи</button>
   </div>
 </section>
-		<section class="section call-to-action__section" id="call-to-action">
+			<section class="section call-to-action__section" id="call-to-action">
   <div class="container">
     <div class="call-to-action__block">
       <div class="call-to-action__left">
@@ -572,7 +573,7 @@
     </div>
   </div>
 </section>
-		<footer class="footer section">
+			<footer class="footer section">
 	<div class="container footer__top">
 		<div class="footer__about">
 			<a class="logo">VIP-KLIMAT</a>
@@ -585,26 +586,28 @@
 		<div class="footer__pages--block">
 			<div class="footer__pages__title">Карта сайта</div>
 			<ul class="footer__pages-content">
-				<li class="footer__pages"><a href="#" class="footer__link">Главная</a></li>
-				<li class="footer__pages"><a href="#" class="footer__link">Блог</a></li>
-				<li class="footer__pages"><a href="#" class="footer__link">О компании</a></li>
-				<li class="footer__pages"><a href="#" class="footer__link">Видео</a></li>
+				<li class="footer__pages"><a class="footer__link">Главная</a></li>
+				<li class="footer__pages"><a href="#about-us" class="footer__link">О компании</a></li>
+				<li class="footer__pages"><a href="#articles" class="footer__link">Статьи</a></li>
+				<!-- <li class="footer__pages"><a href="#" class="footer__link">Видео</a></li> -->
 			</ul>
 		</div>
 		<div class="footer__pages--block">	
 			<div class="footer__pages__title">Бризеры</div>
 			<ul class="footer__pages-content">
-				<li class="footer__pages"><a href="#" class="footer__link">Tion O2</a></li>
-				<li class="footer__pages"><a href="#" class="footer__link">Tion Clever</a></li>
-				<li class="footer__pages"><a href="#" class="footer__link">Tion Magicair</a></li>
-				<li class="footer__pages"><a href="#" class="footer__link">Для медицины</a></li>
+				<li class="footer__pages"><a href="/#tion-02" class="footer__link">Tion O2</a></li>
+				<li class="footer__pages"><a href="/#tion-3s" class="footer__link">Tion 3S</a></li>
+				<li class="footer__pages"><a href="/#tion-lite" class="footer__link">Tion Lite</a></li>
+				<li class="footer__pages"><a href="/#tion-clever" class="footer__link">Tion Clever</a></li>
+				<li class="footer__pages"><a href="/#tion-magic-air" class="footer__link">Tion Magicair</a></li>
+				<li class="footer__pages"><a href="/#tion-filter" class="footer__link">Tion Фильтры</a></li>
 			</ul>
 		</div>
 		<div class="footer__pages--block">
 			<div class="footer__pages__title">Информация</div>
 			<ul class="footer__pages-content">
-				<li class="footer__pages"><a href="#" class="footer__link">Отзывы</a></li>
-				<li class="footer__pages"><a href="#" class="footer__link">Галерея</a></li>
+				<li class="footer__pages"><a href="/#testimonials" class="footer__link">Отзывы</a></li>
+				<li class="footer__pages"><a href="#places" class="footer__link">Галерея</a></li>
 			</ul>
 		</div>
 		<div class="footer__pages--block">
@@ -620,6 +623,7 @@
 		<address class="footer__address">Москва, ул. Рабочая 93, стр 2</address>
 	</div>
 </footer>
+		</main>
 	</div>
 	<script src="js/main.js"></script>
 </body>
