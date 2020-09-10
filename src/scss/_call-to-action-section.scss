@@ -1,0 +1,44 @@
+.call-to-action {
+  &__section {
+    background: linear-gradient(90deg, #0056a8 20.9%, #236eff 100%);
+  }
+  &__block {
+    display: flex;
+    flex-direction: row;
+  }
+  &__left {
+    width: 60%;
+  }
+  
+  &__right {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: flex-end;
+  }
+  &__title {
+    color: var(--color-white);
+    font-family: "Roboto", sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__text {
+    color: var(--color-white);
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-style: italic;
+  }
+
+  &__button {
+    color: var(--color-white);
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 2.438rem;
+    line-height: 28px;
+    padding: 23px 43px;
+  }
+}

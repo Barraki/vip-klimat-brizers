@@ -159,8 +159,19 @@ a {
   font-weight: 700;
   text-align: center;
   margin: 0;
-  line-height: 4.2rem;
+  line-height: 1;
   margin-bottom: 60px;
+}
+
+.subtitle {
+  color: var(--color-black);
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  margin-top: -40px;
+  margin-bottom: 51px;
 }
 
 .section {
@@ -176,6 +187,17 @@ a {
 .btn-blue {
   border-radius: 2.188rem;
   background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.btn-red {
+  background-color: #ef4949;
+}
+
+.btn-red:hover {
+  -webkit-box-shadow: -2px 4px 22px 0px rgba(239, 73, 73, 1);
+  -moz-box-shadow: -2px 4px 22px 0px rgba(239, 73, 73, 1);
+  box-shadow: -2px 4px 22px 0px rgba(239, 73, 73, 1);
 }
 
 .btn-blue:hover {
@@ -187,6 +209,13 @@ a {
 .btn-grey {
   border-radius: 1.563rem;
   background-color: #eeeeee;
+  color: var(--color-black);
+}
+
+.btn-grey:hover {
+  -webkit-box-shadow: -2px 4px 22px 0px rgba(238, 238, 238, 1);
+  -moz-box-shadow: -2px 4px 22px 0px rgba(238, 238, 238, 1);
+  box-shadow: -2px 4px 22px 0px rgba(238, 238, 238, 1);
 }
 
 .btn-lg {
@@ -203,6 +232,19 @@ a {
   font-style: italic;
 }
 
+.btn-section {
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-weight: 400;
+  padding: 13px 60px;
+  font-style: italic;
+
+  &--center {
+    @extend .btn-section;
+    margin: 0 auto;
+    display: block;
+  }
+}
 
 .video .container {
   position: relative;
@@ -211,7 +253,7 @@ a {
   max-height: 500px;
 }
 
-.video  iframe {
+.video iframe {
   position: absolute;
   top: 0;
   left: 0;

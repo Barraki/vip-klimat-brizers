@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +9,19 @@
 	<meta name="theme-color" content="#111111">
 	<title>VIP-KLIMAT - Бризеры для любых помещений</title>
 	<!-- Google Fonts -->
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;0,900;1,300&family=Open+Sans:wght@700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700;1,900&display=swap" rel="stylesheet">
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,800;0,900;1,300&family=Open+Sans:wght@700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400;1,700;1,900&display=swap"
+		rel="stylesheet">
 	<!-- Google Fonts -->
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 	<link rel="stylesheet" href="css/main.min.css">
 </head>
+
 <body>
 	<div class="site-container">
 		<header class="header">
@@ -19,10 +29,10 @@
     <div class="header__logo logo">VIP-KLIMAT</div>
     <nav class="header__nav">
       <ul class="nav__list">
-        <li class="nav__item"><a href="#" class="nav__link active">Бризеры</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Бризеры</a></li>
         <li class="nav__item"><a href="#" class="nav__link">Монтаж</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Акции</a></li>
-        <li class="nav__item"><a href="#" class="nav__link">Блог</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">О нас</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Статьи</a></li>
       </ul>
     </nav>
     <div class="header__contact">
@@ -40,17 +50,18 @@
     <div class="slide">
       <img src="img/brizer-bg-lite.jpg" class="slide__image" alt="бризер lite">
       <div class="container slide__container">
-        <h2 class="slide__title"><span class="logo">Tion </span><span class="slide__product">Бризер Lite</span></h2>
+        <h2 class="slide__title"><span class="logo">Tion </span><span class="slide__product">Бризеры в Москве</span></h2>
         <div class="slide__description">
           Суперкомпактные размеры +
-          очистка от пыли и аллергенов
+          очистка от пыли и аллергенов <br>
+          от производителя
         </div>
       </div>
     </div>
     <div class="container">
       <a href="#" class="main-slider__btn btn btn-blue btn-lg">ЗАКАЗАТЬ</a>
     </div>
-    <div class="main-slider__arrows">
+    <div class="main-slider__arrows visually-hidden">
       <div class="container arrow__container">
         <button class="arrow-left"><img src="img/arrow-left.png" class="arrow-left__image" alt="arrow-left"></button>
         <button class="arrow-right"><img src="img/arrow-right.png" class="arrow-right__image" alt="arrow-right"></button>
@@ -192,14 +203,14 @@
   <iframe width="560" height="315" src="https://www.youtube.com/embed/lHrnLTMMpgQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </section>
-		<section class="shop-section" id="shop">
+		<section class="shop-section section" id="shop">
   <div class="container">
     <h2 class="h2">ВЫБЕРИТЕ СВОЙ БРИЗЕР Tion</h2>
     <div class="shop__container">
       <div class="shop__item">
         <div class="shop__title">Бризер <br> Tion O2</div>
         <div class="shop__image-block">
-          <img src="img/tion-o2.png" alt="tion-o2" class="shop_image">
+          <img src="img/products/tion-o2.png" alt="tion-o2" class="shop_image">
         </div>
         <ul class="shop__features">
           <li class="shop__features__item">Подогрев воздуха</li>
@@ -211,11 +222,12 @@
           <div class="shop__price">12 900₽</div>
           <button class="btn btn-blue shop__button">Купить</button>
         </div>
+        <div class="hits--black">Лучший Выбор</div>
       </div>
       <div class="shop__item">
         <div class="shop__title">Бризер <br> Tion 3S</div>
         <div class="shop__image-block">
-          <img src="img/tion-3s.png" alt="tion-3s" class="shop_image">
+          <img src="img/products/tion-3s.png" alt="tion-3s" class="shop_image">
         </div>
         <ul class="shop__features">
           <li class="shop__features__item">Подогрев воздуха</li>
@@ -224,14 +236,16 @@
           <li class="shop__features__item">Фильтр от газов и запахов AK-XL</li>
         </ul>
         <div class="shop__footer">
-          <div class="shop__price">19 900₽</div>
+          <div class="shop__price--old">20 900₽</div>
+          <div class="shop__price--new">19 900₽</div>
           <button class="btn btn-blue shop__button">Купить</button>
         </div>
+        <div class="hits--red">Скидка</div>
       </div>
       <div class="shop__item">
         <div class="shop__title">Бризер <br> Tion Lite</div>
         <div class="shop__image-block">
-          <img src="img/tion-lite.png" alt="tion-lite" class="shop_image">
+          <img src="img/products/tion-lite.png" alt="tion-lite" class="shop_image">
         </div>
         <ul class="shop__features">
           <li class="shop__features__item">Подогрев воздуха</li>
@@ -240,14 +254,15 @@
           <li class="shop__features__item">Быстрый монтаж</li>
         </ul>
         <div class="shop__footer">
-          <div class="shop__price">9 900₽</div>
+          <div class="shop__price">9 990₽</div>
           <button class="btn btn-blue shop__button">Купить</button>
         </div>
+        <div class="hits--orange">Топ Продаж</div>
       </div>
       <div class="shop__item">
         <div class="shop__title">Бризер <br> Tion Clever</div>
         <div class="shop__image-block">
-          <img src="img/tion-clever.png" alt="tion-clever" class="shop_image">
+          <img src="img/products/tion-clever.png" alt="tion-clever" class="shop_image">
         </div>
         <ul class="shop__features">
           <li class="shop__features__item">Фильтр от мелкой пыли</li>
@@ -255,14 +270,14 @@
           <li class="shop__features__item">Фильтр от газов и запахов АК</li>
         </ul>
         <div class="shop__footer">
-          <div class="shop__price">19 900₽</div>
+          <div class="shop__price">17 900₽</div>
           <button class="btn btn-blue shop__button">Купить</button>
         </div>
       </div>
       <div class="shop__item">
         <div class="shop__title">Управление <br> климатом Magic Air</div>
         <div class="shop__image-block">
-          <img src="img/magic-air.png" alt="magic-air" class="shop_image">
+          <img src="img/products/magic-air.png" alt="magic-air" class="shop_image">
         </div>
         <ul class="shop__features">
           <li class="shop__features__item">Датчики качества воздуха</li>
@@ -273,13 +288,14 @@
           <div class="shop__price">6 900₽</div>
           <button class="btn btn-blue shop__button">Купить</button>
         </div>
+        
       </div>
       <div class="shop__item">
         <div class="shop__title">
           Фильтры <br>
           бризеров Tion</div>
         <div class="shop__image-block">
-          <img src="img/tion-filter.png" alt="tion-filter" class="shop_image">
+          <img src="img/products/tion-filter.png" alt="tion-filter" class="shop_image">
         </div>
         <ul class="shop__features">
           <li class="shop__features__item">Фильтры от мелкой пыли</li>
@@ -294,11 +310,318 @@
     </div>
   </div>
 </section>
-		<footer class="footer">
-	<div class="container"></div>
+		<section class="section call-to-action__section" id="call-to-action">
+  <div class="container">
+    <div class="call-to-action__block">
+      <div class="call-to-action__left">
+        <div class="call-to-action__title">Поможем с подбором бризера</div>
+        <div class="call-to-action__text">
+          Поможем подобрать бризера, исходя из Вашего бюджета,
+          предпочтений к бренду, квадратуры помещения и целей
+        </div>
+      </div>
+      <div class="call-to-action__right">
+        <button class="btn btn-red call-to-action__button">Заказать консультацию</button>
+      </div>
+    </div>
+  </div>
+</section>
+		<section class="about-us__section section" id="about-us">
+  <div class="container">
+    <h2 class="h2">Почему нужно заказывать у нас</h2>
+    <div class="about-us__block">
+      <div class="about-us__item">
+        <div class="about-us__image-block">
+          <img src="img/about-us-1.svg" alt="" class="about-us__image">
+        </div>
+        <div class="about-us__title">От производителей</div>
+        <div class="about-us__text">
+          Мы работаем напрямую от производителей, без посредников
+        </div>
+      </div>
+      <div class="about-us__item">
+        <div class="about-us__image-block">
+          <img src="img/about-us-2.svg" alt="" class="about-us__image">
+        </div>
+        <div class="about-us__title">Техническая гарантия</div>
+        <div class="about-us__text">
+          Официальная гарантия на прибор
+          от производителя и
+          сертифицированный монтаж.
+        </div>
+      </div>
+      <div class="about-us__item">
+        <div class="about-us__image-block">
+          <img src="img/about-us-3.svg" alt="" class="about-us__image">
+        </div>
+        <div class="about-us__title">Всегда в наличии на складе</div>
+        <div class="about-us__text">
+          На нашем складе постоянно в
+          наличии все модели бризеров и
+          комплектующих.
+        </div>
+      </div>
+      <div class="about-us__item">
+        <div class="about-us__image-block">
+          <img src="img/about-us-4.svg" alt="" class="about-us__image">
+        </div>
+        <div class="about-us__title">Обмен и возврат<br> заказа</div>
+        <div class="about-us__text">
+          Вы можете обменять или вернуть
+          товар в течение 14 дней с момента
+          покупки.
+        </div>
+      </div>
+      <div class="about-us__item">
+        <div class="about-us__image-block">
+          <img src="img/about-us-5.svg" alt="" class="about-us__image">
+        </div>
+        <div class="about-us__title">Прямая сервисная поддержка</div>
+        <div class="about-us__text">
+          Консультации по подбору
+          оборудования. Оперативная
+          доставка сменных фильтров.
+        </div>
+      </div>
+      <div class="about-us__item">
+        <div class="about-us__image-block">
+          <img src="img/about-us-6.svg" alt="" class="about-us__image">
+        </div>
+        <div class="about-us__title">Оплата при получении товара</div>
+        <div class="about-us__text">
+          Оплата заказа любым удобным
+          способом, в том числе по
+          безналичному расчету с НДС.
+        </div>
+      </div>
+    </div>
+    <button class="btn btn-blue btn-section--center">Заказать сейчас</button>
+  </div>
+  <section class="testimonials-section section" id="testimonials">
+    <h3 class="h2">Отзывы о бризерах Tion</h3>
+    <div class="container">
+      <button class="testimonials__nav arrow left"><img src="img/arrow-left-grey.png" class="testimonials-left__image"
+          alt="arrow-left-grey"></button>
+      <div class="testimonials__block">
+        <div class="testimonials__item">
+          <div class="testimonials__image-block">
+            <img src="img/testimonials-1.png" alt="testimonials-1" class="testimonials__image">
+          </div>
+          <div class="testimonials__text">
+            <b class="strong-text">Светлана, Москва</b>
+            <p class="text">
+              “ Я счастлива, что установила бризер в дом! Ранее я страдала от тяжелейшего аллергического
+              насморка в сезон цветения растений. Но с приобретением бризера, забыла вовсе, что такое
+              аллергия! “
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="testimonials__nav arrow right"><img src="img/arrow-right-grey.png"
+          class="testimonials-right__image" alt="arrow-right-grey"></button>
+    </div>
+    <button class="btn btn-grey btn-section--center visually-hidden">Все отзывы</button>
+  </section>
+</section>
+		<section class="section montage__section" id="montage">
+  <h2 class="h2">Монтаж бризера Tion</h2>
+  <div class="subtitle">Стандартный монтаж бризера занимает всего 1 час специалистами с профессиональным оборудованием
+  </div>
+  <div class="container">
+    <div class="montage__block">
+      <div class="montage__item">
+        <div class="montage__order">1</div>
+        <div class="montage__image-block">
+          <img src="img/montage-1.png" alt="" class="montage__image">
+        </div>
+        <div class="montage__title">Выбор места установки</div>
+        <div class="montage__text">Бризер можно устанавливать возле окна, под подоконником, рядом с батареей.
+          Допускается установка бризера на утепленную стену, лоджию и застекленный балкон.
+          Наличие пульта управления позволяет устанавливать бризер под потолок.</div>
+      </div>
+      <div class="montage__item">
+        <div class="montage__order">2</div>
+        <div class="montage__image-block">
+          <img src="img/montage-2.png" alt="" class="montage__image">
+        </div>
+        <div class="montage__title">Монтаж устройства</div>
+        <div class="montage__text">Монтажная бригада делает отверстие в стене при помощи установки алмазного бурения —
+          быстро и без малейшей пыли.
+          Установка в жилой квартире без проблем! Отверстие утепляется и шумоизолируется специальным материалом.</div>
+      </div>
+      <div class="montage__item">
+        <div class="montage__order">3</div>
+        <div class="montage__image-block">
+          <img src="img/montage-3.png" alt="" class="montage__image">
+        </div>
+        <div class="montage__title">Подключение бризера</div>
+        <div class="montage__text">Бризер крепится на стену, входное отверстие прибора плотно стыкуется с воздуховодом
+          при помощи уплотнителя, чтобы исключить сквозняки. Бризер подключается к обычной розетке.</div>
+      </div>
+    </div>
+    <button class="btn btn-blue btn-section--center visually-hidden">Подробнее</button>
+  </div>
+</section>
+		<section class="section call-to-action__section" id="call-to-action">
+  <div class="container">
+    <div class="call-to-action__block">
+      <div class="call-to-action__left">
+        <div class="call-to-action__title">Поможем с подбором бризера</div>
+        <div class="call-to-action__text">
+          Поможем подобрать бризера, исходя из Вашего бюджета,
+          предпочтений к бренду, квадратуры помещения и целей
+        </div>
+      </div>
+      <div class="call-to-action__right">
+        <button class="btn btn-red call-to-action__button">Заказать консультацию</button>
+      </div>
+    </div>
+  </div>
+</section>
+		<section class="places__section section">
+  <h2 class="h2">Где эффективно работают бризеры Tion</h2>
+  <div class="container">
+    <div class="places__block">
+      <div class="places__item">
+        <img src="img/places-1.jpg" alt="" class="places__image">
+        <div class="places__text">Дом</div>
+      </div>
+      <div class="places__item">
+        <img src="img/places-2.jpg" alt="" class="places__image">
+        <div class="places__text">Офис</div>
+      </div>
+      <div class="places__item">
+        <img src="img/places-3.jpg" alt="" class="places__image">
+        <div class="places__text">Медицинский центр</div>
+      </div>
+      <div class="places__item">
+        <img src="img/places-4.jpg" alt="" class="places__image">
+        <div class="places__text">Квартира</div>
+      </div>
+      <div class="places__item">
+        <img src="img/places-5.jpg" alt="" class="places__image">
+        <div class="places__text">Кафе</div>
+      </div>
+      <div class="places__item">
+        <img src="img/places-6.jpg" alt="" class="places__image">
+        <div class="places__text">Фитнес клуб</div>
+      </div>
+    </div>
+  </div>
+</section>
+		<section class="articles__section section" id="articles">
+  <h2 class="h2">Полезные статьи и видео</h2>
+  <div class="container">
+    <div class="articles__block">
+      <div class="articles__item">
+        <div class="articles__image-block">
+          <a href="#" class="articles__image--link"><img src="img/article-1.jpg" alt="" class="articles__image"></a>
+        </div>
+        <a href="#" class="articles__title--link">
+          <div class="articles__title">
+            Аллергия на шерсть -
+            способы борьбы</div>
+        </a>
+        <div class="articles__text">Аллергия на шерсть – достаточно распространенная причина, по
+          которой не сбылись многие детские и взрослые мечты о «м...</div>
+      </div>
+      <div class="articles__item">
+        <div class="articles__image-block">
+          <a href="#" class="articles__image--link"><img src="img/article-2.jpg" alt="" class="articles__image"></a>
+        </div>
+        <a href="#" class="articles__title--link">
+          <div class="articles__title">
+            Как выйти из депрессии?
+            Симптомы и лечение
+            депрессии</div>
+        </a>
+        <div class="articles__text">Многие люди живут в состоянии депрессии годами и не подозревают
+          об этом. Периодически проявляется осенняя хандра, плохое нас...</div>
+      </div>
+      <div class="articles__item">
+        <div class="articles__image-block">
+          <a href="#" class="articles__image--link"><img src="img/article-3.jpg" alt="" class="articles__image"></a>
+        </div>
+        <a href="#" class="articles__title--link">
+          <div class="articles__title">
+            Шумовое загрязнение.
+            Влияние шума на организм
+            человека</div>
+        </a>
+        <div class="articles__text">Когда-нибудь человеку придется
+          ради своего существования столь же упорно бороться с шумом, как он
+          борется сейчас с холерой и ч...</div>
+      </div>
+    </div>
+    <button class="btn btn-blue btn-section--center visually-hidden">Еще статьи</button>
+  </div>
+</section>
+		<section class="section call-to-action__section" id="call-to-action">
+  <div class="container">
+    <div class="call-to-action__block">
+      <div class="call-to-action__left">
+        <div class="call-to-action__title">Поможем с подбором бризера</div>
+        <div class="call-to-action__text">
+          Поможем подобрать бризера, исходя из Вашего бюджета,
+          предпочтений к бренду, квадратуры помещения и целей
+        </div>
+      </div>
+      <div class="call-to-action__right">
+        <button class="btn btn-red call-to-action__button">Заказать консультацию</button>
+      </div>
+    </div>
+  </div>
+</section>
+		<footer class="footer section">
+	<div class="container footer__top">
+		<div class="footer__about">
+			<a class="logo">VIP-KLIMAT</a>
+			<div class="footer__text">
+				Технология TION – это комплексная технология обеззараживания и очистки, которая
+				позволяет не только фильтровать воздух с высочайшей эффективностью и обеспечивать полную инактивацию
+				(уничтожение) всех микроорганизмов, но и очищать его от основных вредных веществ в газовой фазе.
+			</div>
+		</div>
+		<div class="footer__pages--block">
+			<div class="footer__pages__title">Карта сайта</div>
+			<ul class="footer__pages-content">
+				<li class="footer__pages"><a href="#" class="footer__link">Главная</a></li>
+				<li class="footer__pages"><a href="#" class="footer__link">Блог</a></li>
+				<li class="footer__pages"><a href="#" class="footer__link">О компании</a></li>
+				<li class="footer__pages"><a href="#" class="footer__link">Видео</a></li>
+			</ul>
+		</div>
+		<div class="footer__pages--block">	
+			<div class="footer__pages__title">Бризеры</div>
+			<ul class="footer__pages-content">
+				<li class="footer__pages"><a href="#" class="footer__link">Tion O2</a></li>
+				<li class="footer__pages"><a href="#" class="footer__link">Tion Clever</a></li>
+				<li class="footer__pages"><a href="#" class="footer__link">Tion Magicair</a></li>
+				<li class="footer__pages"><a href="#" class="footer__link">Для медицины</a></li>
+			</ul>
+		</div>
+		<div class="footer__pages--block">
+			<div class="footer__pages__title">Информация</div>
+			<ul class="footer__pages-content">
+				<li class="footer__pages"><a href="#" class="footer__link">Отзывы</a></li>
+				<li class="footer__pages"><a href="#" class="footer__link">Галерея</a></li>
+			</ul>
+		</div>
+		<div class="footer__pages--block">
+			<div class="footer__pages__title">Контакты</div>
+			<ul class="footer__pages-content">
+				<li class="footer__pages"><a href="telto:+74994304228" class="footer__link--no-hover">+7 (499) 430-4228</a></li>
+				<li class="footer__pages"><a href="mailto:tion.@gmail.com" class="footer__link--no-hover">tion.@gmail.com</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="container footer__bottom">
+		<div class="footer__copyright">Тион Умный микроклимат © 2020</div>
+		<address class="footer__address">Москва, ул. Рабочая 93, стр 2</address>
+	</div>
 </footer>
-
 	</div>
 	<script src="js/main.js"></script>
 </body>
+
 </html>
