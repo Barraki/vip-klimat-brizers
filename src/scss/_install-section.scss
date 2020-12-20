@@ -9,6 +9,9 @@
   &__left {
     width: 63%;
   }
+  &__right img {
+    max-width: none;
+  }
   .hero-title {
     margin-top: 60px;
     margin-bottom: 44px;
@@ -25,7 +28,7 @@
 }
 
 .options {
-  
+
   &-section {
     background-color: #fafafa;
     .title-middle--center {
@@ -39,7 +42,7 @@
     flex-direction: row;
     flex-wrap: wrap;
   }
-  
+
   &__image-block {
     height: 222px;
     display: flex;
@@ -59,7 +62,7 @@
     filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.05));
 
   }
-  
+
   &__item:not(:last-child) {
     margin-right: 20px;
   }

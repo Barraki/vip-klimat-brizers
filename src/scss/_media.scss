@@ -113,26 +113,149 @@
     max-width: 32.633333%;
     min-height: auto;
   }
-  
+
   .articles__title {
     height: 90px;
   }
-  
+
   .shop__title {
     font-size: 20px;
   }
-  
+
   .shop__item {
     min-height: auto;
   }
-  
+
   .shop__features {
     margin-bottom: 30px;
   }
 }
 
-@media screen and (max-width: 1200px) and (min-height: 1000px) {
+@media (max-width: 1200px) and (min-height: 1000px) {
   .main-section .main-slider {
     height: calc(68vh - 101px);
+  }
+}
+
+@media (max-width: 992px) {
+  .section {
+    padding: 30px 0;
+  }
+
+  .header .contact__phone {
+    display: none;
+  }
+  .header .nav__item:not(:last-child) {
+    margin-right: 10px;
+  }
+  .main-section .main-slider {
+    height: auto;
+  }
+
+  .main-section .slide__container {
+    padding-top: 50px;
+  }
+  .main-section .main-slider__btn {
+    margin-bottom: 70px;
+  }
+  .questions__item {
+    flex: 1 0 20%;
+  }
+  .questions__text {
+    font-size: 15px;
+  }
+  .questions__image-block {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    padding: 20px;
+  }
+  .hero-title {
+    font-size: 34px;
+  }
+  .install .hero-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.options__item {
+  height: auto;
+}
+
+.options__image-block {
+  height: 150px;
+}
+
+.options__item {
+  padding: 20px 15px;
+}
+
+.options__title, .options__title--center {
+  font-size: 19px;
+}
+.options__title, .options__title--center {
+  margin-bottom: 20px;
+}
+.options__text, .options__text--center {
+  font-size: 15px;
+}
+
+.shop__features__item {
+  font-size: 15px;
+}
+.shop__features {
+  height: 170px;
+}
+
+.call-to-action__title {
+  font-size: 25px;
+}
+.call-to-action__left {
+    width: 50%;
+}
+
+.call-to-action__text {
+  font-size: 16px;
+}
+.about-us__item {
+  padding: 30px 30px;
+  min-height: auto;
+}
+.about-us__title {
+  margin-bottom: 20px;
+  height: 30px;
+}
+.about-us__text {
+  font-size: 17px;
+}
+
+.testimonials__item {
+  margin: 0 15px;
+}
+.testimonials__image-block {
+  margin-right: 5px;
+}
+.montage__item {
+  min-height: auto;
+}
+.montage__item {
+  max-width: 32.333333%;
+}
+.articles__title {
+  font-size: 18px;
+  min-height: auto;
+  height: 70px;
+}
+
+.footer__about {
+  width: 35%;
+}
+.footer__text {
+  font-size: 15px;
+}
+.footer__pages--block {
+  width: 17%;
+}
+.footer__link, .footer__link--no-hover{
+  font-size: 13px;
 }
 }

@@ -42,7 +42,7 @@ const resources = () => {
 }
 
 const imgToApp = () => {
-	return src(['./src/img/**.jpg', './src/img/**.png', './src/img/**.jpeg', './src/img/*.svg'])
+	return src(['./src/img/**/*.jpg', './src/img/**/*.png', './src/img/**/*.jpeg', './src/img/**/*.svg'])
     .pipe(dest('./app/img'))
 }
 
@@ -199,10 +199,10 @@ const watchFiles = () => {
   watch('./src/html/*.html', htmlInclude);
   watch('./src/*.html', htmlInclude);
   watch('./src/resources/**', resources);
-  watch('./src/img/**.jpg', imgToApp);
-  watch('./src/img/**.jpeg', imgToApp);
-  watch('./src/img/**.png', imgToApp);
-  watch('./src/img/**.svg', svgSprites);
+  watch('./src/img/**/*.jpg', imgToApp);
+  watch('./src/img/**/*.jpeg', imgToApp);
+  watch('./src/img/**/*.png', imgToApp);
+  watch('./src/img/**/.svg', svgSprites);
   watch('./src/fonts/**', fonts);
   watch('./src/fonts/**', fontsStyle);
 }

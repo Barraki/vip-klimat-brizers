@@ -75,6 +75,7 @@ ul {
 
 button {
   border: none;
+  outline: none;
 }
 
 section {
@@ -147,7 +148,7 @@ a {
 .logo {
   color: var(--color-black);
   font-family: "Montserrat", sans-serif;
-  font-size: 3.125rem;
+  font-size: 1.925rem;
   font-weight: 900;
   text-transform: uppercase;
 }
