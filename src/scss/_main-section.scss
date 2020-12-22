@@ -4,6 +4,9 @@
     &__btn {
       padding: 11px 95px;
       margin-top: 70px;
+      animation: fadeInUp;
+      animation-duration: 2s;
+
     }
 
     .arrow {
@@ -41,6 +44,9 @@
     }
     &__title {
       margin-bottom: 61px;
+      animation: fadeInRight;
+      animation-duration: 2s;
+      --animate-delay: 5s;
     }
     &__image {
       width: 100%;
@@ -63,6 +69,9 @@
       font-size: 2.25rem;
       font-weight: 300;
       max-width: 570px;
+      animation: fadeInRight;
+      animation-duration: 2s;
+      --animate-delay: 5s;
     }
   }
   .logo {

@@ -1,100 +1,87 @@
+(function ($) {
+  var widthWindow = $(window).width();
+  var topOffset = 0;
+  AOS.init();
 
+/*================== Preloader start ==================*/
+  $(window).on('load', function () {
+    $(".loader").fadeOut();
+    $("#preloder").delay(200).fadeOut("slow");
 
-// import "./vendor/jquery-ui.min";
-// import "./vendor/jquery.slicknav";
-// import "./vendor/jquery.magnific-popup.min";
-// import "./vendor/jquery.mask.min";
+  });
+  /*================== Preloader end ==================*/
 
-// TODO!: Relink vendor library to html
-
-(function () {
   /*================== Slider testimonials start ==================*/
   $(function () {
     $('#testimonials__slider').slick({
       prevArrow: ".testimonials__nav.left",
-      nextArrow: ".testimonials__nav.right"
+      nextArrow: ".testimonials__nav.right",
+      responsive: [
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            infinite: true,
+            dots: true,
+            speed: 800,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: false,
+          }
+        }
+      ]
     });
   });
   /*================== Slider testimonials end ==================*/
 
   /*================== Anchor testimonials start ==================*/
-  $('a[href^="#"]').click(function () {
+  if (widthWindow < 768) {
+    topOffset = 78;
+  }
+
+  $('a[href^="#"]').on("click", function () {
     var target = $(this).attr("href");
-    if (target) {
-      $("html, body").animate({ scrollTop: $(target).offset().top }, 1000);
+    if (target && target !== '#') {
+      $("html, body").animate({ scrollTop: $(target).offset().top - topOffset }, 1000);
     }
     return false;
   });
   /*================== Anchor testimonials end ==================*/
 
-  /*================== Auto hide navbar start ==================*/
-  jQuery(document).ready(function ($) {
-    var $header = $('.navbar-autohide'),
-      scrolling = false,
-      previousTop = 0,
-      currentTop = 0,
-      scrollDelta = 10,
-      scrollOffset = 150
-
-    $(window).on('scroll', function () {
-      if (!scrolling) {
-        scrolling = true
-
-        if (!window.requestAnimationFrame) {
-          setTimeout(autoHideHeader, 250)
-        }
-        else {
-          requestAnimationFrame(autoHideHeader)
-        }
-      }
-    })
-
-    function autoHideHeader() {
-      var currentTop = $(window).scrollTop()
-
-      // Scrolling up
-      if (previousTop - currentTop > scrollDelta) {
-        $header.removeClass('is-hidden')
-      }
-      else if (currentTop - previousTop > scrollDelta && currentTop > scrollOffset) {
-        // Scrolling down
-        $header.addClass('is-hidden')
-      }
-
-      previousTop = currentTop
-      scrolling = false
-    }
-  });
-  /*================== Auto hide navbar end ==================*/
-
   /*================== Canvas Menu start ==================*/
 
-  $(".canvas__open").on('click', function () {
+  function openMobileMenu() {
     $(".offcanvas-menu-wrapper").addClass("active");
     $(".offcanvas-menu-overlay").addClass("active");
-  });
+  }
 
-  $(".offcanvas-menu-overlay").on('click', function () {
+  function closeMobileMenu() {
     $(".offcanvas-menu-wrapper").removeClass("active");
     $(".offcanvas-menu-overlay").removeClass("active");
-  });
+  }
+
+  $("#mobile-menu-button").on('click', openMobileMenu);
+  $("#close-button, .offcanvas-menu-overlay, .nav__list a").on('click', closeMobileMenu);
+
   /*================== Canvas Menu end ==================*/
 
+  /*================== Modal window start ==================*/
+  $(function () {
+    // (".open-popup-link").magnificPopup({
+    //   type: 'inline',
+    //   midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+    // });
+  });
 
-  /*================== Navigation start ==================*/
-  $(".nav__list").slicknav({
-    prependTo: '#mobile-menu-wrap',
-    allowParentLinks: false,
-    'closedSymbol': '<i class="fa fa-angle-right"></i>', // Character after collapsed parents.
-    'openedSymbol': '<i class="fa fa-angle-up"></i>', // Character after expanded parents.
-    'init': function (e) {
-      $('#mobile-menu-wrap a[href^="/#"]').on('click', function () {
-        $(".offcanvas-menu-wrapper").removeClass("active");
-        $(".offcanvas-menu-overlay").removeClass("active");
-      });
-    }
-  },
-  console.log("work")
-  );
-  /*================== Navigation end ==================*/
-})(jQuery);
+  // TODO!: Add modal windows
+  /*================== Modal window end ==================*/
+
+  /*================== Modal window start ==================*/
+
+  $('input[name=phone]').mask("+38 (000) 000-00-00");
+
+  /*================== Modal window end ==================*/
+
+
+})($, jQuery);
