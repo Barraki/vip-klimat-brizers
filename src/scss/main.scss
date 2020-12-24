@@ -15,15 +15,16 @@
 // }
 
 @import "header";
-@import "main-section";
-@import "questions-section";
-@import "install-section";
-@import "shop-section";
-@import "call-to-action-section";
-@import "about-us-section";
-@import "montage-section.scss";
-@import "places-section";
-@import "articles-section";
+@import "section-main";
+@import "section-questions";
+@import "section-install";
+@import "section-shop";
+@import "section-call-to-action";
+@import "section-about-us";
+@import "section-montage";
+@import "section-places";
+@import "section-articles";
 @import "footer";
+@import "form-style";
 
 @import "media";

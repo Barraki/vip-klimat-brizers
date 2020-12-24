@@ -26,7 +26,8 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -77,7 +78,7 @@
           </ul>
         </nav>
         <div class="header__contact">
-          <button class="btn btn-header btn-blue">Обратный Звонок</button>
+          <a href="#popup-call" rel="modal:open" class="btn btn-header btn-blue modal-link">Обратный Звонок</a>
           <div class="contact__phone">
             <img src="img/phone-icon.svg" alt="" class="contact__phone--icon">
             <a href="telto:+7(499)430-4228" class="phone__link">8 (499) 430-4228</a>
@@ -105,7 +106,7 @@
       </div>
     </div>
     <div class="container">
-      <a href="#" class="main-slider__btn btn btn-blue btn-lg" data-aos="fade-up" data-aos-delay="500">ЗАКАЗАТЬ</a>
+      <a href="#popup-form" rel="modal:open" class="main-slider__btn btn btn-blue btn-lg modal-link">ЗАКАЗАТЬ</a>
     </div>
     <div class="main-slider__arrows visually-hidden">
       <div class="container arrow__container">
@@ -179,7 +180,7 @@
       <strong class="strong-text" data-aos="fade-in">С бризером Вы навсегда забудете о частых простудах, сезонной аллергии и хронической
         усталости.</strong>
     </div>
-    <div class="install__right">
+    <div class="install__right" data-aos="fade-left">
       <img src="img/tion-brizer.png" alt="tion-brizer">
     </div>
   </div>
@@ -269,7 +270,7 @@
         </ul>
         <div class="shop__footer">
           <div class="shop__price">12 900₽</div>
-          <button class="btn btn-blue shop__button">Купить</button>
+          <a href="#popup-form" class="btn btn-blue shop__button modal-link">Купить</a>
         </div>
         <div class="hits--black">Лучший Выбор</div>
       </div>
@@ -287,7 +288,7 @@
         <div class="shop__footer">
           <div class="shop__price--old">20 900₽</div>
           <div class="shop__price--new">19 900₽</div>
-          <button class="btn btn-blue shop__button">Купить</button>
+          <a href="#popup-form" class="btn btn-blue shop__button modal-link">Купить</a>
         </div>
         <div class="hits--red">Скидка</div>
       </div>
@@ -304,7 +305,7 @@
         </ul>
         <div class="shop__footer">
           <div class="shop__price">9 990₽</div>
-          <button class="btn btn-blue shop__button">Купить</button>
+          <a href="#popup-form" class="btn btn-blue shop__button modal-link">Купить</a>
         </div>
         <div class="hits--orange">Топ Продаж</div>
       </div>
@@ -320,7 +321,7 @@
         </ul>
         <div class="shop__footer">
           <div class="shop__price">17 900₽</div>
-          <button class="btn btn-blue shop__button">Купить</button>
+          <a href="#popup-form" class="btn btn-blue shop__button modal-link">Купить</a>
         </div>
       </div>
       <div class="shop__item" data-aos="fade-up" id="tion-magic-air">
@@ -335,7 +336,7 @@
         </ul>
         <div class="shop__footer">
           <div class="shop__price">6 900₽</div>
-          <button class="btn btn-blue shop__button">Купить</button>
+          <a href="#popup-form" class="btn btn-blue shop__button modal-link">Купить</a>
         </div>
 
       </div>
@@ -353,7 +354,7 @@
         </ul>
         <div class="shop__footer">
           <div class="shop__price">2 900₽</div>
-          <button class="btn btn-blue shop__button">Купить</button>
+          <a href="#popup-form" class="btn btn-blue shop__button modal-link">Купить</a>
         </div>
       </div>
     </div>
@@ -371,7 +372,7 @@
         </div>
       </div>
       <div class="call-to-action__right" data-aos="fade-right" data-aos-delay="500">
-        <button class="btn btn-red call-to-action__button">Заказать консультацию</button>
+        <a href="#popup-service" class="btn btn-red call-to-action__button modal-link">Заказать консультацию</a>
       </div>
     </div>
   </div>
@@ -446,7 +447,7 @@
         </div>
       </div>
     </div>
-    <button class="btn btn-blue btn-section--center">Заказать сейчас</button>
+    <a href="#popup-form" class="btn btn-blue btn-section--center modal-link">Заказать сейчас</a>
   </div>
   <section class="testimonials-section section" id="testimonials" data-aos="fade-up">
     <h3 class="h2">Отзывы о бризерах Tion</h3>
@@ -499,7 +500,7 @@
             class="testimonials-right__image" alt="arrow-right-grey"></button>
       </div>
     </div>
-    <button class="btn btn-grey btn-section--center visually-hidden">Все отзывы</button>
+    <a class="btn btn-grey btn-section--center visually-hidden">Все отзывы</a>
   </section>
 </section>
 
@@ -554,7 +555,7 @@
         </div>
       </div>
       <div class="call-to-action__right" data-aos="fade-right" data-aos-delay="500">
-        <button class="btn btn-red call-to-action__button">Заказать консультацию</button>
+        <a href="#popup-service" class="btn btn-red call-to-action__button modal-link">Заказать консультацию</a>
       </div>
     </div>
   </div>
@@ -651,7 +652,7 @@
         </div>
       </div>
       <div class="call-to-action__right" data-aos="fade-right" data-aos-delay="500">
-        <button class="btn btn-red call-to-action__button">Заказать консультацию</button>
+        <a href="#popup-service" class="btn btn-red call-to-action__button modal-link">Заказать консультацию</a>
       </div>
     </div>
   </div>
@@ -671,7 +672,9 @@
       <div class="footer__pages__title">Карта сайта</div>
       <ul class="footer__pages-content">
         <li class="footer__pages"><a href="#questions" class="footer__link">Преимущества</a></li>
+        <li class="footer__pages"><a href="#shop" class="footer__link">Бризеры</a></li>
         <li class="footer__pages"><a href="#about-us" class="footer__link">О компании</a></li>
+        <li class="footer__pages"><a href="#montage" class="footer__link">Монтаж</a></li>
         <li class="footer__pages"><a href="#articles" class="footer__link">Статьи</a></li>
         <!-- <li class="footer__pages"><a href="#" class="footer__link">Видео</a></li> -->
       </ul>
@@ -710,8 +713,53 @@
 </footer>
 
     </main>
-    <div id="test-popup" class="white-popup mfp-hide">
-  Popup content
+    <div id="popup-form" class="modal popup-form">
+  <h2>ЗАКАЖИТЕ МОНТАЖ ПРЯМО СЕЙЧАС, ЗАПОЛНИВ ФОРМУ НИЖЕ:</h2>
+  <form method="post" id="" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="name">Имя</label>
+      <input id="name" class="form-control" type="text" name="name" placeholder="Иван*" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Телефон</label>
+      <input id="phone" class="form-control" type="tel" name="phone" placeholder="+7-000-000-00-00*" required>
+    </div>
+    <p>Нажимая кнопку «Заказать монтаж», Вы подтверждаете, что даете
+      <a href="#" target="_blank">согласие на обработку персональных данных</a> и на получение рекламной информации,
+      отправляемой на указанный Вами
+      номер телефона</p>
+    <button class="btn btn-blue btn-section--center">Заказать монтаж</button>
+  </form>
+</div>
+
+    <div id="popup-call" class="modal popup-form">
+  <h2>ЗАКАЖИТЕ ЗВОНОК ПРЯМО СЕЙЧАС, ЗАПОЛНИВ ФОРМУ НИЖЕ:</h2>
+  <form method="post" id="" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="phone">Телефон</label>
+      <input id="phone" class="form-control" type="tel" name="phone" placeholder="+7-000-000-00-00*" required>
+    </div>
+    <p>Нажимая кнопку «Заказать монтаж», Вы подтверждаете, что даете
+      <a href="#" target="_blank">согласие на обработку персональных данных</a> и на получение рекламной информации,
+      отправляемой на указанный Вами
+      номер телефона</p>
+    <button class="btn btn-blue btn-section--center">Заказать звонок</button>
+  </form>
+</div>
+
+    <div id="popup-service" class="modal popup-form">
+  <h2>ЗАКАЖИТЕ КОНCУЛЬТАЦИЮ ПРЯМО СЕЙЧАС, ЗАПОЛНИВ ФОРМУ НИЖЕ:</h2>
+  <form method="post" id="" enctype="multipart/form-data">
+    <div class="form-group">
+      <label for="phone">Телефон</label>
+      <input id="phone" class="form-control" type="tel" name="phone" placeholder="+7-000-000-00-00*" required>
+    </div>
+    <p>Нажимая кнопку «Заказать монтаж», Вы подтверждаете, что даете
+      <a href="#" target="_blank">согласие на обработку персональных данных</a> и на получение рекламной информации,
+      отправляемой на указанный Вами
+      номер телефона</p>
+    <button class="btn btn-blue btn-section--center">Заказать консультацию</button>
+  </form>
 </div>
 
   </div>
@@ -719,10 +767,9 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"
-    crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="./vendor/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 

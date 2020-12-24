@@ -26,7 +26,8 @@
   <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
   <link rel="stylesheet" href="css/main.min.css">
 </head>
 
@@ -39,30 +40,31 @@
     @include('html/canvas-menu.html')
     <main>
       @include('html/header.html')
-      @include('html/main-section.html')
-      @include('html/questions-section.html')
-      @include('html/install-section.html')
-      @include('html/video-section.html')
-      @include('html/shop-section.html')
-      @include('html/call-to-action-section.html')
-      @include('html/about-us-section.html')
-      @include('html/montage-section.html')
-      @include('html/call-to-action-section.html')
-      @include('html/places-section.html')
-      @include('html/articles-section.html')
-      @include('html/call-to-action-section.html')
+      @include('html/section-main.html')
+      @include('html/section-questions.html')
+      @include('html/section-install.html')
+      @include('html/section-video.html')
+      @include('html/section-shop.html')
+      @include('html/section-call-to-action.html')
+      @include('html/section-about-us.html')
+      @include('html/section-montage.html')
+      @include('html/section-call-to-action.html')
+      @include('html/section-places.html')
+      @include('html/section-articles.html')
+      @include('html/section-call-to-action.html')
       @include('html/footer.html')
     </main>
     @include('html/popup-form.html')
+    @include('html/popup-call.html')
+    @include('html/popup-service.html')
   </div>
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/magnific-popup@1.1.0/dist/jquery.magnific-popup.min.js"
-    crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script src="./vendor/jquery.mask.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.js" integrity="sha512-0XDfGxFliYJPFrideYOoxdgNIvrwGTLnmK20xZbCAvPfLGQMzHUsaqZK8ZoH+luXGRxTrS46+Aq400nCnAT0/w==" crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
 </body>
 
